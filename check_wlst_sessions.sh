@@ -6,7 +6,7 @@
 #
 #Inspired by outdated Weblogic.Admin plugin from Sergei Haramundanis, rewriten
 #from scratch to add missing fonctionnalities, clean the code and to use 
-#Weblogic.WLST
+#Weblogic.WLST (WebLogic Scripting Tool)
 #
 #BOTH check_wlst_sessions.sh and check_wlst_sessions.py are needed for this 
 #plugin to work
@@ -15,7 +15,7 @@
 #    -p password -s server_name -w warning_concurrent_sessions \
 #    -c critical_current_sessions
 ################################################################################
-#See Weblogic Documentation for mon information on WLST if you want to modify
+#See Weblogic Documentation for more information on WLST if you want to modify
 #this script to check other Weblogic parameters 
 #http://docs.oracle.com/cd/E13222_01/wls/docs90/config_scripting/reference.html
 ################################################################################
