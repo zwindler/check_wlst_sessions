@@ -70,8 +70,7 @@ CRITICAL_THRESHOLD=20
 ENABLE_PERFDATA=1
 VERSION="1.0"
 #Use this variable if you don't want to pass weblogic_home as an argument
-#WEBLOGIC_HOME="/appli/weblogic/server"
-WEBLOGIC_HOME="/appli/wls_1033/wlserver_10.3/server"
+WEBLOGIC_HOME="/wls_1033/wlserver_10.3/server"
 URL="t3://localhost:7001"
 
 while getopts ":c:d:hp:s:u:U:vVw:" opt; do
