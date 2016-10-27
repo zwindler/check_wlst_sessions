@@ -1,6 +1,8 @@
 # check_wlst_sessions 1.0
 Nagios compatible plugin to check via WLST the number of actives sessions on a Server (On Oracle WebLogic Server v9+)
 
+BOTH Files (.sh and .py) are needed for this plugin to work
+
 ##Usage
 * check_weblogic_sessions [-v] [-d weblogic_home] [-U [protocol://]url:port] -u userid -p password -s server_name -w warning_concurrent_sessions -c critical_current_sessions
  - checks that the number of active user sessions doesn't exceed given warning and critical thresholds
