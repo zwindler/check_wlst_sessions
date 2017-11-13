@@ -3,7 +3,7 @@ Nagios compatible plugin to check via WLST the number of actives sessions on a S
 
 BOTH Files (.sh and .py) are needed for this plugin to work
 
-##Usage
+## Usage
 * check_weblogic_sessions [-v] [-d weblogic_home] [-U [protocol://]url:port] -u userid -p password -s server_name -w warning_concurrent_sessions -c critical_current_sessions
  - checks that the number of active user sessions doesn't exceed given warning and critical thresholds
  - warning_concurrent_sessions and critical_concurrent_sessions is a number of sessions, defaults being respectively 10 and 20
@@ -16,10 +16,13 @@ BOTH Files (.sh and .py) are needed for this plugin to work
 * check_mem_ng.sh -h
  - prints help (this message)
  
-##Output
+## Output
+```
 ./check_wlst_sessions.sh -u weblogic -p password -s SERVER_1 -w 15 -c 25
   OK: There are OpenSessionsCurrentCount=1 sessions on SERVER_1 | OpenSessionsCurrentCount=8;15;25;
+```
 
+```
 ./check_wlst_sessions.sh -v -u weblogic -p password -s SERVER_1 -w 15 -c 25
   Verbose mode ON
   
@@ -44,3 +47,4 @@ BOTH Files (.sh and .py) are needed for this plugin to work
   (domainRuntime) OpenSessionsCurrentCount=1 
   Disconnected from weblogic server: AdminServer 
   Exiting WebLogic Scripting Tool. 
+  ```
